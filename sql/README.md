@@ -15,6 +15,6 @@ Run these scripts against the MySQL table `UK_Labour_Market.ons_uk_labour_market
 2. Run `01_data_exploration.sql` first to inspect the table.
 3. Run the remaining scripts to produce the summary and historical comparisons.
 
-The scripts use the schema name `UK_Labour_Market`, matching the table reference supplied for this project. If your local MySQL schema has a different name, replace the schema prefix in the scripts consistently. The earlier scripts in this repository used `ons_uk_labour_market_mysql` as the schema name, so confirm the actual schema in MySQL Workbench before running them.
+The scripts use the schema name `UK_Labour_Market`, matching the table reference supplied for this project. If your local MySQL schema has a different name, replace the schema prefix in the scripts consistently. The first two exploration scripts have been aligned to this schema name as well.
 
 The period comparisons are descriptive. They do not prove that one crisis caused a particular labour-market outcome, and the selected date windows are not necessarily equivalent economic periods.
