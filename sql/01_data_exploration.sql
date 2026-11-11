@@ -1,5 +1,5 @@
 -- UK Labour Market Intelligence: data exploration
-USE ons_uk_labour_market_mysql;
+USE UK_Labour_Market;
 
 SHOW TABLES;
 DESCRIBE ons_uk_labour_market_mysql;
