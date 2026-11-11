@@ -23,7 +23,7 @@ A separate raw MySQL import contained 666 rows. These represent different workfl
 
 - **Python / Pandas:** inspect, clean and prepare time-series data.
 - **MySQL:** store the data and compare indicators across periods.
-- **SQL:** explore the dataset and compare selected historical periods.
+- **SQL:** explore the dataset, calculate headline indicators and compare selected historical periods. See the [SQL script guide](sql/README.md) for the purpose and run order of each script.
 - **CSV:** provide a reusable cleaned dataset for further analysis and visualisation.
 - **Data documentation:** see the [data dictionary](data/README.md) for field names, age ranges and units.
 
@@ -59,7 +59,7 @@ For an employer, these trends could inform workforce planning assumptions, locat
 
 - Document why the raw MySQL import and cleaned dataset have different row counts.
 - Add the Python notebook and reproducible cleaning steps.
-- Add the final visualisations and a data dictionary.
+- Add the final visualisations.
 - Cite the exact ONS dataset, series identifiers and definitions.
 - Historical comparisons are descriptive and do not establish causes.
 
