@@ -17,7 +17,7 @@ What do long-term UK employment, unemployment and economic inactivity trends rev
 
 ## Data and approach
 
-The cleaned CSV contains **943 observations** and eight fields: the reporting period, and employment, unemployment, economic activity and economic inactivity rates for both people aged 16+ and people aged 16–64. The headline averages previously calculated for the 16+ measures are employment **71.76%**, unemployment **6.69%** and economic inactivity **23.11%**.
+The cleaned CSV contains **943 observations** and nine fields: the reporting period, and employment, unemployment, economic activity and economic inactivity rates for both people aged 16+ and people aged 16–64. The headline averages previously calculated for the 16+ measures are employment **71.76%**, unemployment **6.69%** and economic inactivity **23.11%**.
 
 A separate raw MySQL import contained 666 rows. These represent different workflow stages and should not be treated as identical datasets until the row-level filtering and preparation steps are documented.
 
