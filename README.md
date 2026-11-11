@@ -17,12 +17,26 @@ What do long-term UK employment, unemployment and economic inactivity trends rev
 
 ## Data and approach
 
-The cleaned analysis dataset contains **943 observations** and four fields: `period`, `employment_rate`, `unemployment_rate` and `economic_inactivity_rate`. The recorded averages are employment **71.76%**, unemployment **6.69%** and economic inactivity **23.11%**. A separate raw MySQL import contained 666 rows; these are different workflow stages and should not be treated as identical datasets.
+The cleaned CSV contains **943 observations** and eight fields: the reporting period, and employment, unemployment, economic activity and economic inactivity rates for both people aged 16+ and people aged 16–64. The headline averages previously calculated for the 16+ measures are employment **71.76%**, unemployment **6.69%** and economic inactivity **23.11%**.
+
+A separate raw MySQL import contained 666 rows. These represent different workflow stages and should not be treated as identical datasets until the row-level filtering and preparation steps are documented.
 
 - **Python / Pandas:** inspect, clean and prepare time-series data.
 - **MySQL:** store the data and compare indicators across periods.
-- **Excel / CSV:** inspect and organise source and output files.
-- **Visualisation:** communicate changes in the three headline indicators.
+- **SQL:** explore the dataset and compare selected historical periods.
+- **CSV:** provide a reusable cleaned dataset for further analysis and visualisation.
+
+## Project structure
+
+```text
+UK-Labour-Market-Analysis/
+├── data/
+│   └── ons_uk_labour_market_clean.csv
+├── sql/
+│   ├── 01_data_exploration.sql
+│   └── 02_financial_crisis_comparison.sql
+└── README.md
+```
 
 ## Example finding
 
@@ -42,8 +56,9 @@ For an employer, these trends could inform workforce planning assumptions, locat
 ## Limitations and next steps
 
 - Document why the raw MySQL import and cleaned dataset have different row counts.
-- Add the final SQL scripts, Python notebook, cleaned CSV and visualisations to this repository.
-- Add a data dictionary and cite the exact ONS series and definitions.
+- Add the Python notebook and reproducible cleaning steps.
+- Add the final visualisations and a data dictionary.
+- Cite the exact ONS dataset, series identifiers and definitions.
 - Historical comparisons are descriptive and do not establish causes.
 
 ## Business value
