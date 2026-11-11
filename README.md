@@ -25,6 +25,7 @@ A separate raw MySQL import contained 666 rows. These represent different workfl
 - **MySQL:** store the data and compare indicators across periods.
 - **SQL:** explore the dataset and compare selected historical periods.
 - **CSV:** provide a reusable cleaned dataset for further analysis and visualisation.
+- **Data documentation:** see the [data dictionary](data/README.md) for field names, age ranges and units.
 
 ## Project structure
 
@@ -35,6 +36,7 @@ UK-Labour-Market-Analysis/
 ├── sql/
 │   ├── 01_data_exploration.sql
 │   └── 02_financial_crisis_comparison.sql
+│   └── README.md
 └── README.md
 ```
 
