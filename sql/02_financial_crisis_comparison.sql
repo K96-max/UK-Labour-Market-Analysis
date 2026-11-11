@@ -1,7 +1,7 @@
 -- UK Labour Market Intelligence: historical downturn comparison
 -- Compares annual average employment and unemployment rates across
 -- the 1979-1987 and 2007-2015 periods.
-USE ons_uk_labour_market_mysql;
+USE UK_Labour_Market;
 
 SELECT
     CAST(RIGHT(period, 4) AS UNSIGNED) AS year,
